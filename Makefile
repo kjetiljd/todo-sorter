@@ -11,10 +11,10 @@ help:
 build: ## Install dependencies
 	npm install
 
-test: ## Run unit tests
+test: build ## Run tests
 	npm test
 
-run: ## Start the service locally (uses PORT env if set)
+run: build ## Start the service locally (uses PORT env if set)
 	npm start
 
 build-docker: ## Build Docker image
